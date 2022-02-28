@@ -1,6 +1,6 @@
 FROM php:7.3-fpm
 
-RUN apt-get update && apt-get install curl
+RUN apt-get update && apt-get install curl &&  apt-get install -y zip unzip 
 
 # Install Postgre PDO
 RUN apt-get install -y libpq-dev \
