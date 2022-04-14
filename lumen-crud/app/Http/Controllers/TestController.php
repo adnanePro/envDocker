@@ -59,6 +59,6 @@ class TestController extends Controller
 
  */
     public function test(){
-
+        dd(env('DB_CONNECTION'));
     }
 }
